@@ -11,7 +11,7 @@ pipeline {
             steps {
                 echo 'Goodbye'
 		echo 'Another commit'
-                mail bcc: '', body: 'Im inside my step', cc: '', from: '', replyTo: '', subject: 'Step message', to: 'devboss7878@gmail.com'
+                mail bcc: '', body: 'Im inside my step again', cc: '', from: '', replyTo: '', subject: 'Step message', to: 'devboss7878@gmail.com'
             }
         }
 
