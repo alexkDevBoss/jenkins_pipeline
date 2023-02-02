@@ -4,6 +4,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
+		checkout([$class: 'GitSCM', branches: [[name: '*/main']], userRemoteConfigs: [[url: 'https://github.com/alexkDevBoss/git_container.git']]])
             }
         }
         stage('Goodbye'){
